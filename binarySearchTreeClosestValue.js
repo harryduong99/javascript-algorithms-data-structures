@@ -8,7 +8,7 @@ function findClosestValueInBst(tree, target) {
 }
 
 let minGap;
-let result;
+let result; 
 
 function recursiveFinding(tree, target, gap) {
   currentGap = tree.value - target  < 0 ? target - tree.value : tree.value - target;
