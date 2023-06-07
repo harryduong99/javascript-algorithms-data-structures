@@ -4,7 +4,6 @@ function minimumWaitingTime(queries) {
   for (let i = 0; i < sortedQueries.length; i++) {
     total += sortedQueries[i] * (sortedQueries.length - 1 - i);
   }
-  // Write your code here.
   return total;
 }
 

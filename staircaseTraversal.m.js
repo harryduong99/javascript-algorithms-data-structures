@@ -1,12 +1,11 @@
 function staircaseTraversal(height, maxSteps) {
-  return recursive(height, maxSteps);
+  return travel(height, maxSteps);
 }
 
 // key is: with height = k; maxStep = s => number of way is numWays[k-1] + numWays[k-2] + ... + numWays[k-s];
 // then with numWays[k-s] for example, gonna equal numWays[k-s-1] + ... + numWay[k-s-s]
-function recursive(height, maxSteps) {
+function travel(height, maxSteps) {
   if (height <= 1) {
-    console.log('asdf');
     return 1;
   }
 
@@ -14,7 +13,7 @@ function recursive(height, maxSteps) {
 
   for (let step = 1; step < Math.min(maxSteps, height) + 1; step++) {
     console.log(height);
-    maxNumberOfWays += recursive(height-step, maxSteps);
+    maxNumberOfWays += travel(height-step, maxSteps);
   }
 
   return maxNumberOfWays;
