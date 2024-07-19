@@ -17,7 +17,7 @@ class LinkedList {
     return this;
   }
 }
-
+// https://stackoverflow.com/questions/66016981/understanding-linkedlists-references
 function removeDuplicatesFromLinkedList(linkedList) {
   let curr = linkedList;
   while (curr.next) {

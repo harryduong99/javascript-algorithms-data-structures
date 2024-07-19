@@ -4,7 +4,6 @@ function arrayOfProducts(array) {
   let result = [];
   let isZeroExist = false;
   let moreThanOneZero = false;
-  console.log('asdf')
   for (let i = 0; i < array.length; i++) {
     if (array[i] === 0) {
       moreThanOneZero = isZeroExist ? true : false
